@@ -8,12 +8,12 @@ import time
 import os
 from sys import stdout
 import csv
-from gaussian_esp_charges_extractor_v2 import gaussian_esp_charges_extractor
-from gaussian_nat_charges_extractor_v2 import gaussian_nat_charges_extractor
-from gaussian_reader_v2 import gaussian_reader
-from gaussian_coordinates_extractor_v2 import gaussian_coordinates_extractor
-from gaussian_nbo_extractor_v3 import gaussian_nbo_extractor
-from gaussian_connectivity_extractor_v2 import gaussian_connectivity_extractor
+from gaussian_esp_charges_extractor import gaussian_esp_charges_extractor
+from gaussian_nat_charges_extractor import gaussian_nat_charges_extractor
+from gaussian_reader import gaussian_reader
+from gaussian_coordinates_extractor import gaussian_coordinates_extractor
+from gaussian_nbo_extractor import gaussian_nbo_extractor
+from gaussian_connectivity_extractor import gaussian_connectivity_extractor
 
 ###############
 #   Warning   #
