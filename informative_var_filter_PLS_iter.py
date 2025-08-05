@@ -11,9 +11,8 @@ from tqdm import tqdm
 import itertools
 import sys
 
-# Setup paths
-sys.path.append(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
-os.chdir(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 
 warnings.filterwarnings("ignore", category=FutureWarning, module='sklearn')
 from utility_functions_v2 import *

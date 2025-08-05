@@ -1,11 +1,10 @@
 ﻿import sys
 import os
 
-# Setup paths
-sys.path.append(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
-#os.chdir(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 
-from utility_functions_v2 import *
+from utility_functions import *
 from sklearn.utils import shuffle
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.model_selection import cross_val_predict
@@ -13,7 +12,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import time
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
-from pls_analysis_v16 import pls_analysis
+from pls_analysis import pls_analysis
 
 data = from_pkl('final_data_expanded.pkl')
 

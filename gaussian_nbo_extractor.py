@@ -3,7 +3,8 @@ from utility_functions import *
 from gaussian_reader import gaussian_reader
 import os
 
-os.chdir(r"C:\Users\francesc.penas\Dropbox\cdf francesc\Fe_porph\calcs\feIII\fetpp\quartet\opt")
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 
 def gaussian_nbo_extractor(file_name: str, total_lines: list[str]) -> list:
     """
