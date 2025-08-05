@@ -1,6 +1,6 @@
-from utility_functions_v2 import *
-from gaussian_la_detector_v2 import gaussian_la_detector
-from dist_calc_v2 import dist_calc
+from utility_functions import *
+from gaussian_la_detector import gaussian_la_detector
+from dist_calc import dist_calc
 
 def gaussian_lb_detector(file_name, coordinates, nbo, connectivity, la):
     

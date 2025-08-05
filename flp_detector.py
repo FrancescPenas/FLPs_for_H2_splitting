@@ -1,4 +1,4 @@
-from utility_functions_v2 import *
+from utility_functions import *
 import os
 import time
 from gaussian_la_detector import gaussian_la_detector
