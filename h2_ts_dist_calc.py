@@ -2,10 +2,10 @@ import sys
 import os
 sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
 #os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
-from utility_functions_v2 import *
-from gaussian_reader_v2 import gaussian_reader
+from utility_functions import *
+from gaussian_reader import gaussian_reader
 from gaussian_freq_extractor import gaussian_freq_extractor
-from dist_calc_v2 import dist_calc
+from dist_calc import dist_calc
 import pandas as pd
 
 label_dict = {

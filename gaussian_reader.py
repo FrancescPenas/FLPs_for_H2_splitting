@@ -3,7 +3,7 @@ import os
 sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
 #os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
 os.chdir(r"C:\Users\francesc.penas\Dropbox\cdf francesc\Fe_porph\calcs\feIII\fetpp\quartet\opt")
-from utility_functions_v2 import *
+from utility_functions import *
 
 def gaussian_reader(file_name, input_dir='.'):
     if input_dir == '.':

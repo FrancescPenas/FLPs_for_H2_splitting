@@ -1,6 +1,6 @@
 from itertools import takewhile
-from utility_functions_v2 import *
-from gaussian_reader_v2 import gaussian_reader
+from utility_functions import *
+from gaussian_reader import gaussian_reader
 import os
 
 os.chdir(r"C:\Users\francesc.penas\Dropbox\cdf francesc\Fe_porph\calcs\feIII\fetpp\quartet\opt")

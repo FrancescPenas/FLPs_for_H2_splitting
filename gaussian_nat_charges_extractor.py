@@ -2,8 +2,8 @@ import sys
 import os
 #sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
 #os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
-from utility_functions_v2 import *
-from gaussian_reader_v2 import gaussian_reader
+from utility_functions import *
+from gaussian_reader import gaussian_reader
 import pandas as pd
 
 def gaussian_nat_charges_extractor(file_name, total_lines):

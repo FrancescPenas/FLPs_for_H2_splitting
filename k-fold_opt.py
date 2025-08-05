@@ -3,9 +3,9 @@ import os
 # Setup paths
 sys.path.append(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
 os.chdir(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
-from utility_functions_v2 import *
+from utility_functions import *
 import numpy as np
-from pls_analysis_v15 import pls_analysis
+from pls_analysis import pls_analysis
 import matplotlib.pyplot as plt
 
 data = from_pkl('final_data_expanded.pkl')
