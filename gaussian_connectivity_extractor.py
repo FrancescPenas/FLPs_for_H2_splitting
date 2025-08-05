@@ -1,7 +1,7 @@
 import sys
 import os
-#sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
-#os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 import re
 from utility_functions import *
 from gaussian_reader import gaussian_reader

@@ -8,10 +8,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 import pandas as pd
 
-# Optional path setup (commented)
-sys.path.append(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
-os.chdir(os.path.join(os.getcwd(), 'cdf francesc', 'FLPs', 'Python', 'code'))
-from utility_functions_v2 import *
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+from utility_functions import *
 
 # Function to convert normalized coefficients to non-normalized
 def convert_to_non_normalized_coefficients(normalized_coefficients, intercept_normalized, X_min, X_max):

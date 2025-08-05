@@ -1,9 +1,9 @@
 import sys
 import os
-#sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
-#os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 from re import I
-from utility_functions_v2 import *
+from utility_functions import *
 import time
 import os
 from sys import stdout

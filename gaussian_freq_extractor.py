@@ -1,7 +1,7 @@
 import sys
 import os
-sys.path.append(r''+os.getcwd()+'\FLPs\Python')
-#os.chdir(r''+os.getcwd()+'\FLPs\Python')
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
 from gaussian_reader import gaussian_reader
 from utility_functions import *
 import pandas as pd

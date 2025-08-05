@@ -1,8 +1,8 @@
 import sys
 import os
-# sys.path.append(r''+os.getcwd()+'\FLPs\Python\code')
-# os.chdir(r''+os.getcwd()+'\FLPs\Python\code')
-from utility_functions_v2 import *
+sys.path.append(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+os.chdir(os.path.join(os.getcwd(), 'path', 'to', 'directory'))
+from utility_functions import *
 import numpy as np
 import pandas as pd
 
