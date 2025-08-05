@@ -1,8 +1,8 @@
 from utility_functions_v2 import *
 import os
 import time
-from gaussian_la_detector_v2 import gaussian_la_detector
-from gaussian_lb_detector_v2 import gaussian_lb_detector
+from gaussian_la_detector import gaussian_la_detector
+from gaussian_lb_detector import gaussian_lb_detector
 
 def flp_detector(pkl_inputfile, pkl_outfile='data_out'):
     start_time = time.time()
