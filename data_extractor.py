@@ -15,13 +15,6 @@ from gaussian_coordinates_extractor import gaussian_coordinates_extractor
 from gaussian_nbo_extractor import gaussian_nbo_extractor
 from gaussian_connectivity_extractor import gaussian_connectivity_extractor
 
-###############
-#   Warning   #
-###############
-# The algorithm is going to take the shortest FLP [B - N(lone pair orbital)].
-# Be careful with the substituents of the LA with other LB(lone pair orbital) 
-# and all the LB(lone pair orbital) in the body of the molecule if there are more than one.
-
 def data_extractor(input_dir, esp_charges_dir='no_esp'):
     start_time = time.time()
     path = os.getcwd()
@@ -121,4 +114,5 @@ def data_extractor(input_dir, esp_charges_dir='no_esp'):
     return [x, len(list_files)]
 
 # Example usage:
+
 x = data_extractor('input_ts')
