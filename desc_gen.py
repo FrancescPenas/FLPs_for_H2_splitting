@@ -260,9 +260,6 @@ def process_file(file_name, dataextracted, dataflp):
     # Calculate eletrostatic potential
     npa_elec_pot = calculate_elecpot(la_nat_charge, lb_nat_charge, mid_dist)
     esp_elec_pot = calculate_elecpot(la_esp_charge, lb_esp_charge, mid_dist)
-    
-    # Extrac energies from csv files
-    #free_ener = 
 
     return la_ener, lb_ener, dist_la_lb, molec_weight, dihed, ang_lalb, direct_ang, la_nat_charge, lb_nat_charge, la_esp_charge, lb_esp_charge, la_npa_elec_field, lb_npa_elec_field, la_esp_elec_field, lb_esp_elec_field, npa_elec_pot, esp_elec_pot
 
@@ -308,4 +305,5 @@ def desc_gen(pkl_dataextracted, pkl_dataflp, free_ener_csv, free_ener_barr_csv, 
 
 #x = from_pkl('input_data.pkl')
 #y = from_pkl('data_flp.pkl')
+
 z = desc_gen('input_data.pkl', 'data_flp.pkl', 'h_split_ener.csv', 'h_split_ener_barr.csv', 'feha_energies.csv', 'fepa_energies.csv', pkl_outfile='final_data')
