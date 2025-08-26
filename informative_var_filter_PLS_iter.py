@@ -85,10 +85,7 @@ if not os.path.exists(out_file):
         to_pkl(df_coef, f'iter_{iteration}_barr_coefs.pkl')
 
         threshold_percent = (importance_threshold/max(all_coef)*100).round(2)
-        #important_predictors = mean_original_coef > importance_threshold
-        
-        important_predictors = mean_original_coef
-        converged=True #line to capture the first iteration coeficients
+        important_predictors = mean_original_coef > importance_threshold
 
         iteration += 1
 
