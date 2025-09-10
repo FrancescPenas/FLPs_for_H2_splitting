@@ -110,8 +110,6 @@ def gjf_gen(file_name, coor, symbols, charge=0, multiplicity=1, save_dir="."):
     
     print(f"GJF file generated for {file_name} in {save_dir} directory.")
 
-#random_files = random.sample(data_ts[1], 10)
-
 file_list = ['h_quinoline_ts1',
              'h_benzopiperidine_ts1',
              'h_dimethylaniline_ts1',
@@ -127,6 +125,8 @@ file_list = ['h_quinoline_ts1',
 data = from_pkl('input.pkl')
 data_ts = from_pkl('input_ts.pkl')
 
+#file_list = random.sample(data_ts[1], 10)
+
 for file_name in file_list:
     coor = from_pkl('input.pkl')[2][file_name.replace('_ts1', '')+'.log']
     coor_pdb = pdb_gen(file_name.replace('_ts1', ''), coor, symbols, save_dir=(os.getcwd()+'\\ts_geoms\\'))
@@ -137,4 +137,5 @@ for file_name in file_list:
     ts_h_labels = h2_ts_detector(file_name, coor_ts, freqs)
     coor_ts_no_H = [item for item in coor_ts if int(item[0]) not in ts_h_labels]
     #coor_ts_no_H_pdb = pdb_gen(file_name+'_no_H', coor_ts_no_H, symbols, save_dir=(os.getcwd()+'\\ts_geoms\\'))
+
     coor_ts_no_H_gjf = gjf_gen(file_name, coor_ts_no_H, symbols, save_dir=(os.getcwd()+'\\ts_geoms\\'))
