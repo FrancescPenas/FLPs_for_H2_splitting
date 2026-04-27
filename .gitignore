@@ -56,6 +56,12 @@ config.py
 !data/input/h_naphthalene.log
 !data/input/me_indenoPy.log
 !data/input/me_xanthene.log
+!data/esp_charges/
+!data/esp_charges/cl_metriazole_chelpg.log
+!data/esp_charges/4meborinane_dimethylaniline_chelpg.log
+!data/esp_charges/h_naphthalene_chelpg.log
+!data/esp_charges/me_indenoPy_chelpg.log
+!data/esp_charges/me_xanthene_chelpg.log
 !data/intra_B_N/
 !data/intra_B_N/BN_aniline_Cl_Cl_tetramethylpentane15.log
 !data/intra_B_N/cf3_dimetriazole.log
