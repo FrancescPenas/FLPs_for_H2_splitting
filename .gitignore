@@ -22,3 +22,22 @@ data/*
 
 !data/
 !data/dataset.pkl
+!data/dataset.csv
+!data/intra_B_N_dataset.pkl
+!data/intra_B_N_dataset.csv
+!data/inter_B_N_dataset.pkl
+!data/inter_B_N_dataset.csv
+!data/intra_B_P_dataset.pkl
+!data/intra_B_P_dataset.csv
+!data/intra_Al_N_dataset.pkl
+!data/intra_Al_N_dataset.csv
+!data/dataset_expanded.pkl
+!data/dataset_expanded.csv
+!data/intra_B_N_dataset_expanded.pkl
+!data/intra_B_N_dataset_expanded.csv
+!data/inter_B_N_dataset_expanded.pkl
+!data/inter_B_N_dataset_expanded.csv
+!data/intra_B_P_dataset_expanded.pkl
+!data/intra_B_P_dataset_expanded.csv
+!data/intra_Al_N_dataset_expanded.pkl
+!data/intra_Al_N_dataset_expanded.csv
