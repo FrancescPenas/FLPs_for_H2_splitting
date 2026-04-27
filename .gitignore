@@ -8,27 +8,17 @@ venv/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Data files
-*.csv
-*.pkl
-
 # VS Code settings
 .vscode/
 
-*.log
-*.chk
-*.out
-*.cube
-*.pkl
-
 ###################
 
-.gitignore
 reserv/
 plot_codes/
 plots/
 plots.py
 requirements.txt
-data/
+data/*
 
-!data/input_dir.pkl
+!data/
+!data/dataset.pkl

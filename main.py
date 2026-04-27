@@ -22,71 +22,71 @@ from src.data_validation.model_validation import model_validation
 # First step: Extract data from the input files.
 
 #data = data_extractor('data/input', esp_charges_dir='data/esp_charges')
-data = from_pkl('data/input_data.pkl')
+#data = from_pkl('data/input_data.pkl')
 
 # Second step: Detect FLPs.
 
 #flp_info = flp_detector('data/input_data', 'data/flp_info')
-flp_info = from_pkl('data/flp_info.pkl')
+#flp_info = from_pkl('data/flp_info.pkl')
 
 # Third step: Generate descriptors for each molecule and save them to a pickle file for later use.
 
 #descriptors = [desc_gen(file_name, data, flp_info, esp_charges_dir=True) for file_name in data[1]]
 #to_pkl(descriptors, 'data/descriptors.pkl')
-descriptors = from_pkl('data/descriptors.pkl')
+#descriptors = from_pkl('data/descriptors.pkl')
 
 # Fifth step: Prepare the dataset for ML including labels and external information.
 
-dataset = dataset_builder(data, descriptors, 'data/reac_free_energies.csv', 'data/barr_free_energies.csv', 'data/feha_energies.csv', 'data/fepa_energies.csv', pkl_outfile='data/dataset', mode='train')
-#dataset = from_pkl('data/dataset.pkl')
+#dataset = dataset_builder(data, descriptors, 'data/reac_free_energies.csv', 'data/barr_free_energies.csv', 'data/feha_energies.csv', 'data/fepa_energies.csv', pkl_outfile='data/dataset', mode='train')
+dataset = from_pkl('data/dataset.pkl')
 
 ## Data mining of the external validation set
 
 # intra_B_N library
 
 #intra_B_N_data = data_extractor('data/intra_B_N', esp_charges_dir='inside')
-intra_B_N_data = from_pkl('data/intra_B_N_data.pkl')
+#intra_B_N_data = from_pkl('data/intra_B_N_data.pkl')
 #intra_B_N_flp_info = flp_detector('data/intra_B_N_data', 'data/intra_B_N_flp_info')
-intra_B_N_flp_info = from_pkl('data/intra_B_N_flp_info.pkl')
+#intra_B_N_flp_info = from_pkl('data/intra_B_N_flp_info.pkl')
 #intra_B_N_descriptors = [desc_gen(file_name, intra_B_N_data, intra_B_N_flp_info, esp_charges_dir=False) for file_name in intra_B_N_data[1]]
 #to_pkl(intra_B_N_descriptors, 'data/intra_B_N_descriptors.pkl')
-intra_B_N_descriptors = from_pkl('data/intra_B_N_descriptors.pkl')
+#intra_B_N_descriptors = from_pkl('data/intra_B_N_descriptors.pkl')
 #intra_B_N_dataset = dataset_builder(intra_B_N_data, intra_B_N_descriptors, 'data/intra_B_N_reac_free_energies.csv', 'data/intra_B_N_barr_free_energies.csv', 'data/intra_B_N_feha_energies.csv', 'data/intra_B_N_fepa_energies.csv', pkl_outfile='data/intra_B_N_dataset', mode='test')
 intra_B_N_dataset = from_pkl('data/intra_B_N_dataset.pkl')
 
 # inter_B_N library
 
 #inter_B_N_data = data_extractor('data/inter_B_N', esp_charges_dir='inside')
-inter_B_N_data = from_pkl('data/inter_B_N_data.pkl')
+#inter_B_N_data = from_pkl('data/inter_B_N_data.pkl')
 #inter_B_N_flp_info = flp_detector('data/inter_B_N_data', 'data/inter_B_N_flp_info')
-inter_B_N_flp_info = from_pkl('data/inter_B_N_flp_info.pkl')
+#inter_B_N_flp_info = from_pkl('data/inter_B_N_flp_info.pkl')
 #inter_B_N_descriptors = [desc_gen(file_name, inter_B_N_data, inter_B_N_flp_info, esp_charges_dir=False) for file_name in inter_B_N_data[1]]
 #to_pkl(inter_B_N_descriptors, 'data/inter_B_N_descriptors.pkl')
-inter_B_N_descriptors = from_pkl('data/inter_B_N_descriptors.pkl')
+#inter_B_N_descriptors = from_pkl('data/inter_B_N_descriptors.pkl')
 #inter_B_N_dataset = dataset_builder(inter_B_N_data, inter_B_N_descriptors, 'data/inter_B_N_reac_free_energies.csv', 'data/inter_B_N_barr_free_energies.csv', 'data/inter_B_N_feha_energies.csv', 'data/inter_B_N_fepa_energies.csv', pkl_outfile='data/inter_B_N_dataset', mode='test')
 inter_B_N_dataset = from_pkl('data/inter_B_N_dataset.pkl')
 
 # intra_B_P library
 
 #intra_B_P_data = data_extractor('data/intra_B_P', esp_charges_dir='inside')
-intra_B_P_data = from_pkl('data/intra_B_P_data.pkl')
+#intra_B_P_data = from_pkl('data/intra_B_P_data.pkl')
 #intra_B_P_flp_info = flp_detector('data/intra_B_P_data', 'data/intra_B_P_flp_info')
-intra_B_P_flp_info = from_pkl('data/intra_B_P_flp_info.pkl')
+#intra_B_P_flp_info = from_pkl('data/intra_B_P_flp_info.pkl')
 #intra_B_P_descriptors = [desc_gen(file_name, intra_B_P_data, intra_B_P_flp_info, esp_charges_dir=False) for file_name in intra_B_P_data[1]]
 #to_pkl(intra_B_P_descriptors, 'data/intra_B_P_descriptors.pkl')
-intra_B_P_descriptors = from_pkl('data/intra_B_P_descriptors.pkl')
+#intra_B_P_descriptors = from_pkl('data/intra_B_P_descriptors.pkl')
 #intra_B_P_dataset = dataset_builder(intra_B_P_data, intra_B_P_descriptors, 'data/intra_B_P_reac_free_energies.csv', 'data/intra_B_P_barr_free_energies.csv', 'data/intra_B_P_feha_energies.csv', 'data/intra_B_P_fepa_energies.csv', pkl_outfile='data/intra_B_P_dataset', mode='test')
 intra_B_P_dataset = from_pkl('data/intra_B_P_dataset.pkl')
 
 # intra_Al_N library
 
 #intra_Al_N_data = data_extractor('data/intra_Al_N', esp_charges_dir='inside')
-intra_Al_N_data = from_pkl('data/intra_Al_N_data.pkl')
+#intra_Al_N_data = from_pkl('data/intra_Al_N_data.pkl')
 #intra_Al_N_flp_info = flp_detector('data/intra_Al_N_data', 'data/intra_Al_N_flp_info')
-intra_Al_N_flp_info = from_pkl('data/intra_Al_N_flp_info.pkl')
+#intra_Al_N_flp_info = from_pkl('data/intra_Al_N_flp_info.pkl')
 #intra_Al_N_descriptors = [desc_gen(file_name, intra_Al_N_data, intra_Al_N_flp_info, esp_charges_dir=False) for file_name in intra_Al_N_data[1]]
 #to_pkl(intra_Al_N_descriptors, 'data/intra_Al_N_descriptors.pkl')
-intra_Al_N_descriptors = from_pkl('data/intra_Al_N_descriptors.pkl')
+#intra_Al_N_descriptors = from_pkl('data/intra_Al_N_descriptors.pkl')
 #intra_Al_N_dataset = dataset_builder(intra_Al_N_data, intra_Al_N_descriptors, 'data/intra_Al_N_reac_free_energies.csv', 'data/intra_Al_N_barr_free_energies.csv', 'data/intra_Al_N_feha_energies.csv', 'data/intra_Al_N_fepa_energies.csv', pkl_outfile='data/intra_Al_N_dataset', mode='test')
 intra_Al_N_dataset = from_pkl('data/intra_Al_N_dataset.pkl')
 
