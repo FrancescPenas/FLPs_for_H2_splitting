@@ -29,3 +29,5 @@ plots/
 plots.py
 requirements.txt
 data/
+
+!data/input_dir.pkl
