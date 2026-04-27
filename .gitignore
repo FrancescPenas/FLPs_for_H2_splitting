@@ -23,6 +23,7 @@ venv/
 
 ###################
 
+.gitignore
 reserv/
 plot_codes/
 plots/
