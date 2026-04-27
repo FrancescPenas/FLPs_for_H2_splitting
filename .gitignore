@@ -22,7 +22,6 @@ plots/
 plots.py
 requirements.txt
 data/*
-config.py
 
 # Data training set
 !data/
