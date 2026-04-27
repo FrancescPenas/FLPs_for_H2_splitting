@@ -13,12 +13,16 @@ venv/
 
 ###################
 
+*
+!*/
+
 reserv/
 plot_codes/
 plots/
 plots.py
 requirements.txt
 data/*
+config.py
 
 !data/
 !data/dataset.pkl
@@ -41,3 +45,9 @@ data/*
 !data/intra_B_P_dataset_expanded.csv
 !data/intra_Al_N_dataset_expanded.pkl
 !data/intra_Al_N_dataset_expanded.csv
+!data/input/
+!data/input/cl_metriazole.log
+!data/input/4meborinane_dimethylaniline.log
+!data/input/h_naphthalene.log
+!data/input/me_indenoPy.log
+!data/input/me_xanthene.log
