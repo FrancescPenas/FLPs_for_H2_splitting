@@ -57,4 +57,11 @@ config.py
 !data/input/me_indenoPy.log
 !data/input/me_xanthene.log
 !data/intra_B_N/
-!data/input_B_N/BN_aniline_Cl_Cl_tetramethylpentane15.log
+!data/intra_B_N/BN_aniline_Cl_Cl_tetramethylpentane15.log
+!data/intra_B_N/cf3_dimetriazole.log
+!data/inter_B_N/
+!data/inter_B_N/dfdmeobn_pyra.log
+!data/intra_B_P/
+!data/intra_B_P/phosphanylphenilborane_phosphanylphenilborane.log
+!data/intra_Al_N/
+!data/intra_Al_N/bicyclo_alaniline.log
