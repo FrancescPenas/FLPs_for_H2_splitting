@@ -26,18 +26,38 @@ config.py
 
 # Data training set
 !data/
+!data/reac_free_energies.csv
+!data/barr_free_energies.csv
+!data/feha_energies.csv
+!data/fepa_energies.csv
 !data/dataset.pkl
 !data/dataset.csv
 !data/dataset_expanded.pkl
 !data/dataset_expanded.csv
 
 # Data testing set
+!data/intra_B_N_reac_free_energies.csv
+!data/intra_B_N_barr_free_energies.csv
+!data/intra_B_N_feha_energies.csv
+!data/intra_B_N_fepa_energies.csv
 !data/intra_B_N_dataset.pkl
 !data/intra_B_N_dataset.csv
+!data/inter_B_N_reac_free_energies.csv
+!data/inter_B_N_barr_free_energies.csv
+!data/inter_B_N_feha_energies.csv
+!data/inter_B_N_fepa_energies.csv
 !data/inter_B_N_dataset.pkl
 !data/inter_B_N_dataset.csv
+!data/intra_B_P_reac_free_energies.csv
+!data/intra_B_P_barr_free_energies.csv
+!data/intra_B_P_feha_energies.csv
+!data/intra_B_P_fepa_energies.csv
 !data/intra_B_P_dataset.pkl
 !data/intra_B_P_dataset.csv
+!data/intra_Al_N_reac_free_energies.csv
+!data/intra_Al_N_barr_free_energies.csv
+!data/intra_Al_N_feha_energies.csv
+!data/intra_Al_N_fepa_energies.csv
 !data/intra_Al_N_dataset.pkl
 !data/intra_Al_N_dataset.csv
 !data/intra_B_N_dataset_expanded.pkl
