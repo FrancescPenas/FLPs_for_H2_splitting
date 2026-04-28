@@ -12,7 +12,6 @@ from data_expander import data_expander
 from data_analysis.k_fold_opt import k_fold_optimization
 from data_analysis.pls_analysis import pls_analysis
 from data_analysis.informative_var_filter_PLS_iter import informative_variable_filter_pls
-from data_analysis.informative_var_filter_PLS_iter_v2 import informative_variable_filter_pls as informative_variable_filter_pls_v2
 from src.data_validation.model_validation import model_validation
 
 #################
@@ -154,11 +153,7 @@ val_data_expanded = [['inter_B_N', 'intra_B_N', 'intra_B_P', 'intra_Al_N'], [int
 
 #Informative variable filter PLS iterative optimization
 
-#info_var_barr = informative_variable_filter_pls(dataset_expanded.iloc[:, 4:], dataset_expanded['free_ener_barr'], n_random_models=10, max_predictors=15, out_name='data/informative_var_barr_results', comb_analysis=False)
-
-#info_var_barr_meanthreshold = informative_variable_filter_pls(dataset_expanded.iloc[:, 4:], dataset_expanded['free_ener_barr'], n_random_models=10, max_predictors=15, out_name='data/informative_var_barr_results_meanthreshold', comb_analysis=False)
-
-# info_var_barr_v2 = informative_variable_filter_pls_v2(
+# info_var_barr = informative_variable_filter_pls(
 #     dataset_expanded.iloc[:, 4:],
 #     dataset_expanded['free_ener_barr'],
 #     n_random_sets=5,

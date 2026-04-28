@@ -4,7 +4,6 @@ from pathlib import Path
 import os
 import csv
 from IPython.display import display
-# import numpy as np
 
 def p(lst):
     # Prints each element of the list `lst` on a new line.
@@ -17,10 +16,6 @@ def pf(obj):
 def find_index(lst, ch):
     # Returns indices of elements in `lst` that are strings starting with the specified character `ch`.
     return [i for i, item in enumerate(lst) if isinstance(item, str) and item.startswith(ch)]
-
-# def find_index2(lst, ch):
-#     """Returns indices of elements in `lst` that are exactly equal to the specified character `ch`."""
-#     return [i for i, item in enumerate(lst) if item == ch]
 
 def to_csv(data, csv_name, mode):
     # Writes `data` to a CSV file named `csv_name` using the specified `mode` ('w' for write, 'a' for append).
@@ -60,10 +55,6 @@ def vector(b, e):
     # Calculates the vector from point `b` to point `e` by subtracting the coordinates of `b` from those of `e`.
     return [e_i - b_i for b_i, e_i in zip(b, e)]
 
-# def distance(p0, p1):
-#     """Calculates the Euclidean distance between points `p0` and `p1`."""
-#     return length(vector(p0, p1))
-
 def angle(v1, v2):
     # Calculates the angle in radians between two vectors `v1` and `v2` using the dot product and lengths of the vectors.
     dot_product = sum(a * b for a, b in zip(v1, v2))
@@ -72,24 +63,6 @@ def angle(v1, v2):
 def all_same(lst):
     # Checks if all elements in the list `lst` are the same.
     return len(set(lst)) == 1
-
-# def divide_list(input_list, num_sublists):
-#     """
-#     Divides `input_list` into `num_sublists` of approximately equal length.
-    
-#     Returns a list of sublists.
-#     """
-#     avg_length = len(input_list) // num_sublists
-#     remainder = len(input_list) % num_sublists
-#     sublists = []
-#     start = 0
-
-#     for i in range(num_sublists):
-#         end = start + avg_length + (1 if i < remainder else 0)
-#         sublists.append(input_list[start:end])
-#         start = end
-
-#     return sublists
 
 def normalize_dataframe(df):
     # Normalizes the values in a pandas DataFrame `df` to a range between 0 and 1 using min-max normalization.
