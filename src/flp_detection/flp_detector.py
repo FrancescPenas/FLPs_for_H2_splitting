@@ -2,7 +2,7 @@ import time
 import os
 from utility_functions import p, to_csv, from_pkl, to_pkl
 from pathlib import Path
-from flp_detection.gaussian_la_detector_v2 import gaussian_la_detector
+from flp_detection.gaussian_la_detector import gaussian_la_detector
 from flp_detection.gaussian_lb_detector import gaussian_lb_detector
 
 def flp_detector(pkl_inputfile, pkl_outfile='data_out'):
