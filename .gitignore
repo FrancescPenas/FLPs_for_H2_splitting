@@ -23,6 +23,9 @@ data/*
 
 !requirements.txt
 
+!src/
+!src/*
+
 # Data training set
 !data/
 !data/reac_free_energies.csv
