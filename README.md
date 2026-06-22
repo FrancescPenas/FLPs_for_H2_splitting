@@ -156,7 +156,7 @@ Below is a summary of the main scripts. Each follows a **Purpose → Inputs → 
 
 **Outputs:**  
 - Iterative analysis results (`iter_{iteration}_barr_coefs.pkl`).  
-- Optimized models (`opt_barr_models.pkl`, `opt_barr_models.csv`).  
+- Optimized models (`informative_var_barr_results.pkl`, `informative_var_barr_results.csv`).  
 
 ---
 
@@ -180,10 +180,7 @@ Below is a summary of the main scripts. Each follows a **Purpose → Inputs → 
 **Purpose:** Calculate H–H bond distances in transition states.  
 **Process:**  
 - Identify imaginary frequency and corresponding H atoms.  
-- Calculate H–H distances from coordinates.  
-
-**Outputs:**  
-- `input_ts_data.pkl` with computed distances.  
+- Calculate H–H distances from coordinates. 
 
 ---
 
@@ -192,7 +189,7 @@ Below is a summary of the main scripts. Each follows a **Purpose → Inputs → 
 **Process:**  
 - Identify H atoms involved in H–H cleavage.  
 - Remove them and prepare Gaussian input files for distortion energy evaluation.  
-- Generate corresponding PDB files for visualization.  
+- Generate corresponding PDB files for visualization (optional).  
 
 ---
 
