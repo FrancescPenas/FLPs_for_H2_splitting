@@ -16,7 +16,6 @@ venv/
 *
 !*/
 
-reserv/
 plot_codes/
 plots/
 plots.py
@@ -33,6 +32,12 @@ data/*
 !data/dataset.csv
 !data/dataset_expanded.pkl
 !data/dataset_expanded.csv
+
+!data/h_h_ts_dists.csv
+!data/h_h_ts_dists.pkl
+
+!data/ts_geoms/
+!data/ts_geoms/*
 
 # Data testing set
 !data/intra_B_N_reac_free_energies.csv
@@ -70,11 +75,17 @@ data/*
 
 # Gaussian output file examples
 !data/input/
+!data/input_ts/
 !data/input/cl_metriazole.log
+!data/input_ts/cl_metriazole_ts1.log
 !data/input/4meborinane_dimethylaniline.log
+!data/input_ts/4meborinane_dimethylaniline_ts1.log
 !data/input/h_naphthalene.log
+!data/input_ts/h_naphthalene_ts1.log
 !data/input/me_indenoPy.log
+!data/input_ts/me_indenoPy_ts1.log
 !data/input/me_xanthene.log
+!data/input_ts/me_xanthene_ts1.log
 !data/esp_charges/
 !data/esp_charges/cl_metriazole_chelpg.log
 !data/esp_charges/4meborinane_dimethylaniline_chelpg.log

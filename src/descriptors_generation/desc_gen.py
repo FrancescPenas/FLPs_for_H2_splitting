@@ -1,7 +1,7 @@
 ﻿import numpy as np
 from atomic_data import a_weights
 from utility_functions import vector, angle
-from descriptors_generation.flp_angles_v2 import flp_angles
+from descriptors_generation.flp_angles import flp_angles
 
 def extract_energies(nbo, la_eindex, lb_eindex):
     # Extract the energies for LA and LB from the NBO data using the provided indices.

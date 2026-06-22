@@ -8,8 +8,9 @@ from data_extraction.gaussian_connectivity_extractor import gaussian_connectivit
 from data_extraction.gaussian_nat_charges_extractor import gaussian_nat_charges_extractor
 from utility_functions import to_pkl
 from data_extraction.gaussian_esp_charges_extractor import gaussian_esp_charges_extractor
+from data_extraction.gaussian_freq_extractor import gaussian_freq_extractor
 
-def data_extractor(input_dir, esp_charges_dir='no_esp'):
+def data_extractor(input_dir, esp_charges_dir='no_esp', extract_freqs=False):
     start_time = time.time()
     path = os.getcwd()
     current_file = 0
@@ -99,6 +100,26 @@ def data_extractor(input_dir, esp_charges_dir='no_esp'):
             
         esp_charges_dict = dict(zip(list_files_esp, esp_charges_list))
     
+    if extract_freqs:
+        print("\nExtracting frequencies...")
+        freq_list = []
+        current_file = 0
+        dir_path_freq = os.path.join(path, input_dir)
+        list_files_freq = os.listdir(dir_path_freq)
+        list_files_freq.sort()  # Ensure consistent ordering
+        
+        while current_file < len(list_files_freq):
+            # Reader
+            file_name = list_files_freq[current_file]
+            total_lines = gaussian_reader(file_name, input_dir)
+            
+            # Frequencies extractor
+            frequencies = gaussian_freq_extractor(total_lines, file_name)
+            freq_list.append(frequencies)
+            current_file += 1
+            
+        frequencies_dict = dict(zip(list_files_freq, freq_list))
+
     # Dictionaries of extracted data
     coordinates_dict = dict(zip(list_files, coordinates_list))
     nbo_dict = dict(zip(list_files, nbo_list))
@@ -109,6 +130,9 @@ def data_extractor(input_dir, esp_charges_dir='no_esp'):
     x = [error_list, list_files, coordinates_dict, nbo_dict, connectivity_dict, nat_char_dict]
     if esp_charges_dir != 'no_esp':
         x.append(esp_charges_dict)
+
+    if extract_freqs:
+        x.append(frequencies_dict)
 
     # Print errors if any
     if error_list:
