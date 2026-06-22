@@ -21,6 +21,8 @@ plots/
 plots.py
 data/*
 
+!requirements.txt
+
 # Data training set
 !data/
 !data/reac_free_energies.csv
