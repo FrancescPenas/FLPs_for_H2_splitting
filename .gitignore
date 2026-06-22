@@ -19,7 +19,6 @@ venv/
 plot_codes/
 plots/
 plots.py
-requirements.txt
 data/*
 
 # Data training set
