@@ -62,8 +62,8 @@ This repository provides computational tools to guide the development of next-ge
 
 2. Create the environment with **Anaconda**:
    ```bash
-   conda env create -f environment.yml -n my_custom_name
-   conda activate my_custom_name
+   conda create --name <env> --file requirements.txt
+   conda activate <env>
    ```
 
 This environment includes all required Python modules with compatible versions.
@@ -88,6 +88,7 @@ Below is a summary of the main scripts. Each follows a **Purpose → Inputs → 
   - NBO orbitals and charges (`gaussian_nbo_extractor`, `gaussian_nat_charges_extractor`)  
   - Atomic connectivity (`gaussian_connectivity_extractor`)  
   - ESP charges (`gaussian_esp_charges_extractor`)  
+  - Frequencies (`gaussian_freq_extractor`) (in case of a transition state Gaussian output file)
 
 **Outputs:**  
 - `input_data.pkl`: Extracted data.  
@@ -178,7 +179,6 @@ Below is a summary of the main scripts. Each follows a **Purpose → Inputs → 
 ### `h2_ts_dist_calc.py`
 **Purpose:** Calculate H–H bond distances in transition states.  
 **Process:**  
-- Extract vibrational frequencies via `gaussian_freq_extractor.py`.  
 - Identify imaginary frequency and corresponding H atoms.  
 - Calculate H–H distances from coordinates.  
 
